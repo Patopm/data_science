@@ -1,0 +1,77 @@
+[
+  {
+    "nombre_coleccion": "clientes",
+    "descripcion": "Estructura para registrar a los usuarios de la tienda",
+    "ejemplo_documento": {
+      "_id": "ObjectId('65a1b2c3d4e5f6a7b8c9d0e1')",
+      "nombre": "Carlos",
+      "apellidos": "Gómez Pérez",
+      "email": "carlos.gomez@example.com",
+      "fecha_registro": "2026-03-21T10:00:00Z",
+      "preferencias_deportivas": [
+        "Fútbol",
+        "Running"
+      ],
+      "direccion_envio": {
+        "calle": "Av. Insurgentes Sur 123",
+        "ciudad": "Ciudad de México",
+        "codigo_postal": "01000",
+        "estado": "CDMX"
+      },
+      "activo": true
+    }
+  },
+  {
+    "nombre_coleccion": "productos",
+    "descripcion": "Estructura flexible para el catálogo de artículos deportivos",
+    "ejemplo_documento": {
+      "_id": "ObjectId('65a1b2c3d4e5f6a7b8c9d0e2')",
+      "sku": "DEP-RUN-1002",
+      "categoria": "Calzado",
+      "deporte": "Running",
+      "nombre_producto": "Tenis UltraSpeed Pro",
+      "marca": "Nike",
+      "precio_mxn": 2499.00,
+      "stock": 150,
+      "atributos": {
+        "tallas_disponibles": [
+          25.0,
+          26.5,
+          27.0,
+          28.5
+        ],
+        "colores": [
+          "Negro",
+          "Azul Neón"
+        ],
+        "material": "Malla transpirable"
+      },
+      "imagenes": [
+        "https://deportivamx.com/img/run1002-1.jpg",
+        "https://deportivamx.com/img/run1002-2.jpg"
+      ]
+    }
+  },
+  {
+    "nombre_coleccion": "ordenes_compra",
+    "descripcion": "Estructura transaccional de ventas",
+    "ejemplo_documento": {
+      "_id": "ObjectId('65a1b2c3d4e5f6a7b8c9d0e3')",
+      "cliente_id": "ObjectId('65a1b2c3d4e5f6a7b8c9d0e1')",
+      "fecha_compra": "2026-03-21T14:30:00Z",
+      "estado_orden": "Procesando",
+      "total_mxn": 2499.00,
+      "metodo_pago": "Tarjeta de Crédito",
+      "articulos": [
+        {
+          "producto_id": "ObjectId('65a1b2c3d4e5f6a7b8c9d0e2')",
+          "nombre_producto": "Tenis UltraSpeed Pro",
+          "cantidad": 1,
+          "precio_unitario": 2499.00,
+          "talla_seleccionada": 27.0,
+          "color_seleccionado": "Azul Neón"
+        }
+      ]
+    }
+  }
+]
