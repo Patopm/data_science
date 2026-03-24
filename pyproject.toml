@@ -1,14 +1,12 @@
 [project]
 name = "data-science"
 version = "0.1.0"
-description = "Add your description here"
+description = "Curso de Ciencia de Datos - Tecmilenio"
 readme = "README.md"
 requires-python = ">=3.11"
-dependencies = [
-    "jupyter>=1.1.1",
-    "matplotlib>=3.10.8",
-    "numpy>=2.4.3",
-    "pandas>=3.0.1",
-    "scikit-learn>=1.8.0",
-    "seaborn>=0.13.2",
+
+[tool.uv.workspace]
+members = [
+    "semanas/*",
+    "packages/*",
 ]
