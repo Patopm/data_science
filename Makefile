@@ -52,7 +52,8 @@ new-semana: ## Crea la estructura de una nueva semana  (ej: make new-semana N=2)
 	@[ -n "$(N)" ] || { printf "$(YELLOW)Error:$(RESET) Especifica el número de semana: make new-semana N=2\n"; exit 1; }
 	@[ ! -d "$(SEMANAS_DIR)/semana$(N)" ] || { printf "$(YELLOW)Aviso:$(RESET) semana$(N) ya existe, omitiendo.\n"; exit 0; }
 	@mkdir -p $(SEMANAS_DIR)/semana$(N)/actividad \
-	           $(SEMANAS_DIR)/semana$(N)/complementarios/actividades
+	           $(SEMANAS_DIR)/semana$(N)/complementarios/actividades \
+	           $(SEMANAS_DIR)/semana$(N)/complementarios/ejercicios
 	@printf '[project]\nname = "semana$(N)"\nversion = "0.1.0"\ndescription = "Semana $(N)"\nrequires-python = ">=3.11"\ndependencies = []\n' \
 		> $(SEMANAS_DIR)/semana$(N)/pyproject.toml
 	@printf '# Semana $(N)\n\n## Actividades Completadas\n\n- [ ] Actividad $(N).1\n\n## Aprendido\n\n## Commits Realizados\n' \
