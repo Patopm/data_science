@@ -3,4 +3,4 @@ name = "semana2"
 version = "0.1.0"
 description = "Semana 2"
 requires-python = ">=3.11"
-dependencies = []
+dependencies = ["pymongo>=4.16.0"]
