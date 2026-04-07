@@ -1,0 +1,6 @@
+[project]
+name = "semana3"
+version = "0.1.0"
+description = "Semana 3"
+requires-python = ">=3.11"
+dependencies = []

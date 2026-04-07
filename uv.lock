@@ -18,6 +18,7 @@ members = [
     "data-science",
     "semana1",
     "semana2",
+    "semana3",
 ]
 
 [[package]]
@@ -2353,6 +2354,11 @@ requires-dist = [
     { name = "pymongo", specifier = ">=4.16.0" },
     { name = "seaborn", specifier = ">=0.13.2" },
 ]
+
+[[package]]
+name = "semana3"
+version = "0.1.0"
+source = { virtual = "semanas/semana3" }
 
 [[package]]
 name = "send2trash"
