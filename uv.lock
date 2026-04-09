@@ -2361,13 +2361,17 @@ version = "0.1.0"
 source = { virtual = "semanas/semana3" }
 dependencies = [
     { name = "jupyter" },
+    { name = "matplotlib" },
     { name = "pandas" },
+    { name = "seaborn" },
 ]
 
 [package.metadata]
 requires-dist = [
     { name = "jupyter", specifier = ">=1.1.1" },
+    { name = "matplotlib", specifier = ">=3.10.8" },
     { name = "pandas", specifier = ">=3.0.1" },
+    { name = "seaborn", specifier = ">=0.13.2" },
 ]
 
 [[package]]
