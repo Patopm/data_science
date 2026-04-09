@@ -2359,6 +2359,12 @@ requires-dist = [
 name = "semana3"
 version = "0.1.0"
 source = { virtual = "semanas/semana3" }
+dependencies = [
+    { name = "pandas" },
+]
+
+[package.metadata]
+requires-dist = [{ name = "pandas", specifier = ">=3.0.1" }]
 
 [[package]]
 name = "send2trash"
