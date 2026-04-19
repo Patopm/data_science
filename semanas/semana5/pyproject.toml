@@ -1,0 +1,11 @@
+[project]
+name = "semana5"
+version = "0.1.0"
+description = "Semana 5"
+requires-python = ">=3.11"
+dependencies = [
+    "jupyter>=1.1.1",
+    "matplotlib>=3.10.8",
+    "pandas>=3.0.1",
+    "scipy>=1.17.1",
+]
